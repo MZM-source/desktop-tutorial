@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*CSS Position: static,(bydefault) absolute, relative, fixed, sticky */
+        
+        .box{
+            border: 3px solid hotpink;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+        .container{
+            background-color: aqua;
+            border: 3px solid lightsteelblue;
+            height: 4009px;
+
+        }
+        #box3{
+            /* relative: positions to element relative to is normal position and will leave a gap to its normal position*/
+            /* position: relative; to the position if its first parent */
+            /* position: absolute; */
+            /* left: 22px;
+            top: 29px; */
+    /* fixed:positions to element relative to the browser window   */
+            /* position: fixed;
+            right: 15px;
+bottom: 20px; */
+position: sticky;
+top: 13px;        
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    </body>
+</html>
